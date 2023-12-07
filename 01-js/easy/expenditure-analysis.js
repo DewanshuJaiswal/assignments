@@ -9,9 +9,9 @@ function calculateTotalSpentByCategory(transactions) {
   
   const expenditure = {};
 
-  for(const local of transactions)
+  for(let{category, price} of transactions)
   {
-    const { category, price} = local;
+    //const { category, price} = local;
 
     if(expenditure.hasOwnProperty(category))
     {
